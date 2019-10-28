@@ -16,7 +16,7 @@ class RolesTableSeeder extends Seeder
         ],
             [
                 'id'         => 2,
-                'title'      => 'User',
+                'title'      => 'Secretaria',
                 'created_at' => '2019-04-15 19:13:32',
                 'updated_at' => '2019-04-15 19:13:32',
                 'deleted_at' => null,

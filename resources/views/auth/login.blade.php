@@ -15,7 +15,7 @@
                         <h1>
                             <div class="login-logo">
                                 <a href="#">
-                                    {{ trans('global.site_title') }}
+                                    Serviteca
                                 </a>
                             </div>
                         </h1>
@@ -35,13 +35,10 @@
                         <div class="row">
                             <div class="col-6">
                                 <input type="submit" class="btn btn-primary px-4" value='{{ trans('global.login') }}'>
-                                <label class="ml-2">
-                                    <input name="remember" type="checkbox" /> {{ trans('global.remember_me') }}
-                                </label>
                             </div>
                             <div class="col-6 text-right">
-                                <a class="btn btn-link px-0" href="{{ route('password.request') }}">
-                                    {{ trans('global.forgot_password') }}
+                                <a class="btn btn-link px-0">
+                                    <input name="remember" type="checkbox" /> Recordar
                                 </a>
                             </div>
                         </div>
