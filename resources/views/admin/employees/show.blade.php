@@ -33,6 +33,16 @@
                         ${{ $employee->email }}
                     </td>
                 </tr>
+                <tr>
+                    <th>
+                        Roles
+                    </th>
+                    <td>
+                        @foreach($employee->roles as $id => $roles)
+                            <span class="label label-info label-many">{{ $roles->title }}</span>
+                        @endforeach
+                    </td>
+                </tr>
             </tbody>
         </table>
     </div>

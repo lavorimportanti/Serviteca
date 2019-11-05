@@ -108,6 +108,8 @@ return [
             'email_helper'             => '',
             'email_verified_at'        => 'Email verified at',
             'email_verified_at_helper' => '',
+            'document'                 => 'Document',
+            'document_helper'          => '',
             'password'                 => 'Password',
             'password_helper'          => '',
             'roles'                    => 'Roles',

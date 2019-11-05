@@ -5,26 +5,7 @@
         <div class="card-header">
             {{ trans('global.create') }} {{ trans('global.employee.title_singular') }}
         </div>
-        <div class="form-group {{ $errors->has('roles') ? 'has-error' : '' }}">
-            <label for="roles">{{ trans('global.user.fields.roles') }}*
-                <span class="btn btn-info btn-xs select-all">Select all</span>
-                <span class="btn btn-info btn-xs deselect-all">Deselect all</span></label>
-            <select name="roles[]" id="roles" class="form-control select2" multiple="multiple">
-                @foreach($roles as $id => $roles)
-                    <option value="{{ $id }}" {{ (in_array($id, old('roles', [])) || isset($user) && $user->roles->contains($id)) ? 'selected' : '' }}>
-                        {{ $roles }}
-                    </option>
-                @endforeach
-            </select>
-            @if($errors->has('roles'))
-                <em class="invalid-feedback">
-                    {{ $errors->first('roles') }}
-                </em>
-            @endif
-            <p class="helper-block">
-                {{ trans('global.user.fields.roles_helper') }}
-            </p>
-        </div>
+
         <div class="card-body">
             <form action="{{ route("admin.employees.store") }}" method="POST" enctype="multipart/form-data">
                 @csrf

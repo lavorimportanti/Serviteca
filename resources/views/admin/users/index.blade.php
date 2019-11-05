@@ -16,7 +16,7 @@
 
     <div class="card-body">
         <div class="table-responsive">
-            <table class=" table table-bordered table-striped table-hover datatable">
+            <table class=" table table-bordered table-striped table-hover">
                 <thead>
                     <tr>
                         <th width="10">
@@ -29,10 +29,10 @@
                             {{ trans('global.user.fields.email') }}
                         </th>
                         <th>
-                            {{ trans('global.user.fields.email_verified_at') }}
+                            {{ trans('global.user.fields.document') }}
                         </th>
                         <th>
-                            {{ trans('global.user.fields.roles') }}
+                            Cargo
                         </th>
                         <th>
                             &nbsp;
@@ -52,7 +52,7 @@
                                 {{ $user->email ?? '' }}
                             </td>
                             <td>
-                                {{ $user->email_verified_at ?? '' }}
+                                {{ $user->document ?? '' }}
                             </td>
                             <td>
                                 @foreach($user->roles as $key => $item)

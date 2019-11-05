@@ -21,6 +21,9 @@ class UpdateUserRequest extends FormRequest
             'email'   => [
                 'required',
             ],
+            'document'    => [
+                'required',
+            ],
             'roles.*' => [
                 'integer',
             ],

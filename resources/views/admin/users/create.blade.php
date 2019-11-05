@@ -33,6 +33,18 @@
                     {{ trans('global.user.fields.email_helper') }}
                 </p>
             </div>
+            <div class="form-group {{ $errors->has('document') ? 'has-error' : '' }}">
+                <label for="document">{{ trans('global.user.fields.document') }}</label>
+                <input type="text" id="document" name="document" class="form-control">
+                @if($errors->has('document'))
+                    <em class="invalid-feedback">
+                        {{ $errors->first('document') }}
+                    </em>
+                @endif
+                <p class="helper-block">
+                    {{ trans('global.user.fields.document_helper') }}
+                </p>
+            </div>
             <div class="form-group {{ $errors->has('password') ? 'has-error' : '' }}">
                 <label for="password">{{ trans('global.user.fields.password') }}</label>
                 <input type="password" id="password" name="password" class="form-control">

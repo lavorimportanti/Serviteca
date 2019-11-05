@@ -27,10 +27,10 @@
                 </tr>
                 <tr>
                     <th>
-                        {{ trans('global.user.fields.email_verified_at') }}
+                        {{ trans('global.user.fields.document') }}
                     </th>
                     <td>
-                        {{ $user->email_verified_at }}
+                        {{ $user->document }}
                     </td>
                 </tr>
                 <tr>

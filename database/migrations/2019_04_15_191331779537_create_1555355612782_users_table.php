@@ -13,6 +13,7 @@ class Create1555355612782UsersTable extends Migration
             $table->string('name');
             $table->string('email');
             $table->datetime('email_verified_at')->nullable();
+            $table->string('document');
             $table->string('password');
             $table->string('remember_token')->nullable();
             $table->timestamps();

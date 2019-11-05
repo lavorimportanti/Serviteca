@@ -33,6 +33,9 @@
                             {{ trans('global.employee.fields.email') }}
                         </th>
                         <th>
+                            {{ trans('global.user.fields.roles') }}
+                        </th>
+                        <th>
                             &nbsp;
                         </th>
                     </tr>
@@ -51,6 +54,11 @@
                             </td>
                             <td>
                                 {{ $employee->email ?? '' }}
+                            </td>
+                            <td>
+                                @foreach($employee->roles as $key => $item)
+                                    <span class="badge badge-info">{{ $item->title }}</span>
+                                @endforeach
                             </td>
                             <td>
                                 @can('employee_show')
